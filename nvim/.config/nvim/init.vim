@@ -74,14 +74,15 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
 call plug#end()
 
-lua require('lua/andotplug.gitsigns')
-lua require('lua/andotplug.lualine')
-lua require('lua/andotplug.lsp')
-lua require('lua/andotplug.telescope')
-lua require('lua/andotplug.treesitter')
-lua require('lua/andotplug.tokyonight')
-lua require('lua/andotplug.nvim-tree')
-lua require('lua/andotplug.bufferline')
+lua require('andotplug.gitsigns')
+lua require('andotplug.lualine')
+lua require('andotplug.packer')
+lua require('andotplug.lsp')
+lua require('andotplug.telescope')
+lua require('andotplug.treesitter')
+lua require('andotplug.tokyonight')
+lua require('andotplug.nvim-tree')
+lua require('andotplug.bufferline')
 
 
 -- Colors
