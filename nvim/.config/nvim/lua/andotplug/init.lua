@@ -1,8 +1,0 @@
-require('andotplug.gitsigns')
-require('andotplug.lualine')
-require('andotplug.lsp')
-require('andotplug.telescope')
-require('andotplug.treesitter')
-require('andotplug.tokyonight')
-require('andotplug.nvim-tree')
-require('andotplug.bufferline')
