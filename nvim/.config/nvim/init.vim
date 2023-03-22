@@ -2,33 +2,6 @@
 
 let mapleader = " "
 
-# set termguicolors
-# set tabstop=4 
-# set softtabstop=4
-# set shiftwidth=4
-# set expandtab
-# set smartindent
-# set number
-# set numberwidth=1
-# set relativenumber
-# set signcolumn=yes
-set noswapfile
-set nobackup
-set undodir=~/.config/nvim/undodir
-set undofile
-# set incsearch
-# set nohlsearch
-# set ignorecase
-# set smartcase
-# set nowrap
-# set splitbelow
-# set splitright
-# set hidden
-# set scrolloff=999
-# set noshowmode
-# set updatetime=250 
-# set encoding=UTF-8
-# set mouse=a
 
 
 " --- Plugins
@@ -74,48 +47,34 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
 call plug#end()
 
-require("andotlua.plugins-setup")
-require("andotlua.core.options")
-require("andotlua.core.keymaps")
-require("andotlua.core.colorscheme")
-require("andotlua.plugins.comment")
-require("andotlua.plugins.nvim-tree")
-require("andotlua.plugins.lualine")
-require("andotlua.plugins.telescope")
-require("andotlua.plugins.nvim-cmp")
-require("andotlua.plugins.lsp.mason")
-require("andotlua.plugins.lsp.lspsaga")
-require("andotlua.plugins.lsp.lspconfig")
-require("andotlua.plugins.lsp.null-ls")
-require("andotlua.plugins.autopairs")
-require("andotlua.plugins.treesitter")
-require("andotlua.plugins.gitsigns")
+lua require("andotlua.plugins-setup")
+lua require("andotlua.core.options")
+lua require("andotlua.core.keymaps")
+lua require("andotlua.core.colorscheme")
+lua require("andotlua.plugins.comment")
+lua require("andotlua.plugins.nvim-tree")
+lua require("andotlua.plugins.lualine")
+lua require("andotlua.plugins.telescope")
+lua require("andotlua.plugins.nvim-cmp")
+lua require("andotlua.plugins.lsp.mason")
+lua require("andotlua.plugins.lsp.lspsaga")
+lua require("andotlua.plugins.lsp.lspconfig")
+lua require("andotlua.plugins.lsp.null-ls")
+lua require("andotlua.plugins.autopairs")
+lua require("andotlua.plugins.treesitter")
+lua require("andotlua.plugins.gitsigns")
 
 
--- Colors
+" --- Colors
 
-# set background=dark
-# colorscheme tokyonight
+
 
 
 " --- Remaps
 
-# nnoremap <leader>h :wincmd h<Cr>
-# nnoremap <leader>j :wincmd j<Cr>
-# nnoremap <leader>k :wincmd k<Cr>
-# nnoremap <leader>l :wincmd l<Cr>
-# nnoremap <silent><leader>[ :BufferLineCyclePrev<Cr>
-# nnoremap <silent><leader>] :BufferLineCycleNext<Cr>
-# nnoremap <silent><leader>q :bdelete<Cr>
 
 
 " --- Autocommands
 
-" Remove vert split 
-" https://www.reddit.com/r/vim/comments/effwku/transparent_vertical_bar_in_vim/
-" https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f
-set fillchars=vert:\  " there is whitespace after the backslash
-augroup RemoveVertSplit
-    autocmd!
-    autocmd BufEnter,ColorScheme * highlight VertSplit ctermfg=1 ctermbg=None cterm=None
-augroup END
+
+
